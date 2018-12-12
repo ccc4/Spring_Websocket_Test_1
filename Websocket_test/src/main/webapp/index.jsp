@@ -16,7 +16,7 @@
 	</c:if>
 	<c:if test="${!empty loginMember }">
 		<div>
-			<span>${loginMember.id } 님 반갑습니다.</span>
+			<span>${loginMember.name } 님 반갑습니다.</span>
 			<button type="button" onclick="location.href='${pageContext.request.contextPath}/member/logout'">로그아웃</button>
 			<button type="button" onclick="location.href='${pageContext.request.contextPath}/chat/'">채팅접속</button>
 		</div>

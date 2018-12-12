@@ -16,14 +16,17 @@
 </c:if>
 
 	<div>
-		<form action="${pageContext.request.contextPath }/member/login" method="POST">
+		<form action="${pageContext.request.contextPath }/member/join" method="POST">
+			<div>
+				<input type="text" name="name" placeholder="사용자 성함">
+			</div>
 			<div>
 				<input type="text" name="id" placeholder="아이디">
 			</div>
 			<div>
 				<input type="password" name="password" placeholder="비밀번호">
 			</div>
-			<button type="submit">로그인</button>
+			<button type="submit">가입</button>
 		</form>
 	</div>
 

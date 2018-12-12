@@ -1,16 +1,19 @@
 package model;
 
+import java.util.Date;
+
 public class Member {
-	private int m_idx;
+	private int idx;
 	private String id;
 	private String password;
-	private String email;
+	private String name;
+	private Date writeDate;
 	
-	public int getM_idx() {
-		return m_idx;
+	public int getIdx() {
+		return idx;
 	}
-	public void setM_idx(int m_idx) {
-		this.m_idx = m_idx;
+	public void setIdx(int idx) {
+		this.idx = idx;
 	}
 	public String getId() {
 		return id;
@@ -24,11 +27,17 @@ public class Member {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public String getEmail() {
-		return email;
+	public String getName() {
+		return name;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Date getWriteDate() {
+		return writeDate;
+	}
+	public void setWriteDate(Date writeDate) {
+		this.writeDate = writeDate;
 	}
 	
 	
