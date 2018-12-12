@@ -46,6 +46,5 @@ public class Chat_room_members {
 	public String changeDateType(Date join_date) {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss a");
 		return sdf.format(join_date);
-	}
-
+	}	
 }
