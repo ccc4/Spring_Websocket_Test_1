@@ -27,6 +27,18 @@
 		location.href="${pageContext.request.contextPath}/";
 	</script>
 </c:if>
+<c:if test="${join eq 1 }">
+	<script type="text/javascript">
+		alert("회원가입 완료!\n${name} 님 환영합니다 :)");
+		location.href="${pageContext.request.contextPath}/";
+	</script>
+</c:if>
+<c:if test="${join eq 0 }">
+	<script type="text/javascript">
+		alert("회원가입 실패!\n입력한 값이 너무 길 수도 있어요");
+		location.href="${pageContext.request.contextPath}/member/login";
+	</script>
+</c:if>
 
 </body>
 </html>

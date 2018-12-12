@@ -29,6 +29,7 @@
 			<button type="submit">가입</button>
 		</form>
 	</div>
-
+	<button type="button" onclick="location.href='${pageContext.request.contextPath}/'">메인으로</button>
+	
 </body>
 </html>

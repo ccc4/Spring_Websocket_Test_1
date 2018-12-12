@@ -9,5 +9,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		SELECT * FROM member WHERE id = #{id}
 	</select>
 	
+	<insert id="join" parameterType="member">
+		INSERT INTO member (id, password, name) VALUES (#{id}, #{password}, #{name});
+	</insert>
 	
 </mapper>

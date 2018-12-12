@@ -26,6 +26,7 @@
 			<button type="submit">로그인</button>
 		</form>
 	</div>
+	<button type="button" onclick="location.href='${pageContext.request.contextPath}/'">메인으로</button>
 
 </body>
 </html>

@@ -26,6 +26,7 @@
 			<button type="button" id="btn_send">전송</button>
 		</div>
 	</div>
+	<button type="button" onclick="location.href='${pageContext.request.contextPath}/'">메인으로</button>
 
 
 <script type="text/javascript">

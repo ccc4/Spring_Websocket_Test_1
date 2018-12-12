@@ -18,4 +18,8 @@ public class MemberDAO {
 	public Member getModel(Member member) {
 		return sqlSession.selectOne(strNameSpace + ".getModel", member);
 	}
+	
+	public int join(Member member) {
+		return sqlSession.insert(strNameSpace + ".join", member);
+	}
 }

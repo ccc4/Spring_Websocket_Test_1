@@ -47,4 +47,20 @@ public class MemberController {
 		
 		return RESULT_CHECK;
 	}
+	
+	@RequestMapping(value="/join", method=RequestMethod.GET)
+	public String join() {
+		return "member/join";
+	}
+	@RequestMapping(value="/join", method=RequestMethod.POST)
+	public String join(Model model, Member member) {
+		int result = service.join(member);
+		if(result == 1) {
+			model.addAttribute("join", result);
+			model.addAttribute("name", member.getName());
+		} else {
+			model.addAttribute("join", result);
+		}
+		return RESULT_CHECK;
+	}
 }
